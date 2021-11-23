@@ -19,7 +19,6 @@ importers:
       '@vueuse/core': ^6.4.1
       '@vueuse/router': ^6.4.1
       bumpp: ^7.1.1
-      chalk: ^4.1.2
       codemirror: ^5.62.3
       codemirror-theme-vars: ^0.1.1
       debug: ^4.3.2
@@ -28,6 +27,7 @@ importers:
       eslint-plugin-jest: ^24.4.2
       esno: ^0.9.1
       fuse.js: ^6.4.6
+      kolorist: ^1.5.0
       npm-run-all: ^4.1.5
       prism-theme-vars: ^0.2.2
       rimraf: ^3.0.2
@@ -67,7 +67,6 @@ importers:
       '@vueuse/core': 6.4.1_vue@3.2.12
       '@vueuse/router': 6.4.1_vue-router@4.0.11+vue@3.2.12
       bumpp: 7.1.1
-      chalk: 4.1.2
       codemirror: 5.62.3
       codemirror-theme-vars: 0.1.1
       diff-match-patch: 1.0.5
@@ -75,6 +74,7 @@ importers:
       eslint-plugin-jest: 24.4.2_eslint@7.32.0+typescript@4.4.3
       esno: 0.9.1
       fuse.js: 6.4.6
+      kolorist: 1.5.0
       npm-run-all: 4.1.5
       prism-theme-vars: 0.2.2
       rimraf: 3.0.2
@@ -2601,6 +2601,10 @@ packages:
   /kleur/3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
+    dev: true
+
+  /kolorist/1.5.0:
+    resolution: {integrity: sha512-pPobydIHK884YBtkS/tWSZXpSAEpcMbilyun3KL37ot935qL2HNKm/tI45i/Rd+MxdIWEhm7/LmUQzWZYK+Qhg==}
     dev: true
 
   /levn/0.4.1:

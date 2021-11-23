@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import _debug from 'debug'
-import { yellow } from 'chalk'
+import { yellow } from 'kolorist'
 import type { ModuleNode, Plugin, ResolvedConfig, ViteDevServer } from 'vite'
 import sirv from 'sirv'
 import { parseURL } from 'ufo'
@@ -193,13 +193,13 @@ function PluginInspect(options: Options = {}): Plugin {
       }
     })
 
-    server.httpServer?.once('listening',()=>{
-        const protocol = config.server.https ? 'https' : 'http'
-        const port = config.server.port
-        setTimeout(() => {
-             // eslint-disable-next-line no-console
-             console.log(`  > Inspect: ${yellow(`${protocol}://localhost:${port}/__inspect/`)}\n`)
-        }, 0);
+    server.httpServer?.once('listening', () => {
+      const protocol = config.server.https ? 'https' : 'http'
+      const port = config.server.port
+      setTimeout(() => {
+        // eslint-disable-next-line no-console
+        console.log(`  > Inspect: ${yellow(`${protocol}://localhost:${port}/__inspect/`)}\n`)
+      }, 0)
     })
   }
 
